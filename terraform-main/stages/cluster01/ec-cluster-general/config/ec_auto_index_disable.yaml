@@ -1,0 +1,13 @@
+---
+transient:
+  action:
+    auto_create_index: 'false'
+persistent:
+  action:
+    auto_create_index: 'false'
+  cluster:
+    indices:
+      close:
+        enable: 'true'
+    metadata:
+      display_name: test01 (287515)

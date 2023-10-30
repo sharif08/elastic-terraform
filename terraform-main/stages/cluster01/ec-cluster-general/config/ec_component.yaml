@@ -1,0 +1,33 @@
+---
+index:
+  lifecycle:
+    name: logs
+  codec: best_compression
+  default_pipeline: logs-kubernetes.container_logs-1.31.2
+  mapping:
+    total_fields:
+      limit: '10000'
+  query:
+    default_field:
+    - container.id
+    - container.image.name
+    - container.name
+    - container.runtime
+    - log.file.path
+    - kubernetes.pod.name
+    - kubernetes.pod.uid
+    - kubernetes.namespace
+    - kubernetes.node.name
+    - kubernetes.node.hostname
+    - kubernetes.node.uid
+    - kubernetes.namespace_uid
+    - kubernetes.replicaset.name
+    - kubernetes.deployment.name
+    - kubernetes.daemonset.name
+    - kubernetes.statefulset.name
+    - kubernetes.job.name
+    - kubernetes.cronjob.name
+    - kubernetes.container.name
+    - kubernetes.container.image
+    - error.message
+    - message

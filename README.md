@@ -1,1 +1,2 @@
-# elastic-terraform
+# elastic-cloud-terraform
+Elastic Cloud Terrform
